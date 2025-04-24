@@ -1,0 +1,32 @@
+# Node modules
+node_modules/
+
+# dotenv file (jangan pernah di-push)
+.env
+
+# upload file dari multer (opsional, karena hanya sementara)
+uploads/
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# PM2 process logs
+pids/
+logs/
+*.pid
+*.seed
+
+# Build artifacts (jika ada)
+dist/
+build/

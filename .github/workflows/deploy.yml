@@ -20,7 +20,7 @@ jobs:
       - name: Deploy to Amazon EC2
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@${{ secrets.EC2_HOST }} << 'EOF'
-            cd /var/www/mywebsite/runningCICD
+            cd /home/ubuntu/app
             git pull origin main
             # Jika menggunakan Apache di Amazon Linux
             sudo systemctl restart nginx
